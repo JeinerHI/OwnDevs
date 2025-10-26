@@ -1,0 +1,89 @@
+:root {
+    --mainColor: #FF000A;
+    --secondColor: #1E1E1E;
+    --thirdColor: #9E9E9E;
+    --fourthColor: #FFFFFF;
+    --fifthColor: #2E2E2E;
+    --transparent: #9e9e9e7a;
+    --fuentePrimario: 'MyCustomFont', "Oswald",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.testimonios-section {
+  width: 85%;
+  margin: 8rem auto 0;
+  text-align: center;
+}
+
+.testimonios-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.testimonial {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: var(--fifthColor);
+  border-radius: 1rem;
+  position: relative;
+  margin: 0 1rem;
+}
+
+.testimonial .quote {
+  font-size: 4rem;
+  color: var(--mainColor);
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-weight: bold;
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+}
+
+.testimonial h4 {
+  margin-top: 1rem;
+  font-weight: normal;
+  color: #bbb;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+.nav-btn.left {
+  left: 0;
+}
+
+.nav-btn.right {
+  right: 0;
+}
+
+.nav-btn:hover {
+  color: #FF0000;
+}

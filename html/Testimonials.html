@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer - Home</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/testimonials.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="navBar">
+            <a href="Home.html" class="logo">
+                <img src="../img/logo-header.png" alt="Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li class="enlace">
+                        <a href="Contact.html">Contacto</a>
+                    </li>
+                    <li class="enlace">
+                        <a href="Services.html">Servicios</a>
+                        <ul class="desplegable">
+                            <li>
+                                <a href="">Personal Training</a>
+                            </li>
+                            <li>
+                                <a href="">Personal Training + Dieta</a>
+                            </li>
+                            <li>
+                                <a href="">Dieta</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="enlace">
+                        <a href="Testimonials.html">Testimonios</a>
+                    </li>
+                    <li class="enlace">
+                        <a href="Sign.html">Mi Area</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="SignUp.html" class="cta1">
+                <h2>¡Unirme!</h2>
+            </a>
+        </div>
+    </header>
+
+    <section class="testimonios-section">
+        <h2 class="testimonios-title">ELLOS HABLAN POR NOSOTROS...</h2>
+        <div class="carousel">
+            <button class="nav-btn left" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel-track" id="carousel-track">
+                <!-- Testimonio 1 -->
+                <div class="testimonial">
+                    <div class="quote">“</div>
+                    <p>"Gracias a Kev-Fit, recuperé la motivación que había perdido. Ahora entreno con propósito y me
+                        siento increíble cada día."</p>
+                    <h4>- Lucía Martínez</h4>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="testimonial">
+                    <div class="quote">“</div>
+                    <p>"El plan de entrenamiento y nutrición personalizado cambió mi vida. Bajé 10kg y subí mi energía
+                        al 100%."</p>
+                    <h4>- Andrés Gómez</h4>
+                </div>
+                <!-- Testimonio 3 -->
+                <div class="testimonial">
+                    <div class="quote">“</div>
+                    <p>"Nunca había tenido resultados tan rápidos. Kev sabe cómo llevarte al siguiente nivel sin
+                        rendirte."</p>
+                    <h4>- Camila Ríos</h4>
+                </div>
+                <!-- Testimonio 4 -->
+                <div class="testimonial">
+                    <div class="quote">“</div>
+                    <p>"Me sentí escuchado desde el día uno. Kev adaptó todo a mis horarios y me ayudó a formar hábitos
+                        reales."</p>
+                    <h4>- Mauricio Ortega</h4>
+                </div>
+                <!-- Testimonio 5 -->
+                <div class="testimonial">
+                    <div class="quote">“</div>
+                    <p>"La mejor decisión que tomé este año fue unirme. El acompañamiento constante marca la
+                        diferencia."</p>
+                    <h4>- Sofía Herrera</h4>
+                </div>
+            </div>
+            <button class="nav-btn right" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <script src="../js/carousel.js"></script>
+
+    <footer>
+        <div class="whatsapp-button">
+            <div id="chatbox" class="form">
+                <div class="head">
+                    <h3>Chateanos...</h3>
+                    <div id="close" class="close">
+                        <p>x</p>
+                    </div>
+                </div>
+                <textarea name="Escribe un whastapp" id="" placeholder="Hello world"></textarea>
+            </div>
+            <div id="chat-toggle" class="w-button">
+                <img src="../img/whatsapp-logo.webp" alt="">
+            </div>
+        </div>
+        <div class="content-footer">
+            <div class="first-column-footer logo">
+                <img src="../img/logo-header.png" alt="">
+            </div>
+            <div class="second-column-footer">
+                <h3>Personal Trainer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Ut a mattis eget augue vivamus parturient eu aliquet. In
+                        laoreet risus ut nulla interdum urna sollicitudin. Nisl viverra in id ultricies.</p>
+            </div>
+            <div class="third-column-footer">
+                <h3>Menu</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p>Home</p>
+                        </a>
+                        <a href="../html/Services.html">
+                            <p>Services</p>
+                        </a>
+                        <a href="../html/Contact.html">
+                            <p>Contacto</p>
+                        </a>
+                        <a href="../html/Testimonials.html">
+                            <p>Testimonios</p>
+                        </a>
+                        <a href="Sign.html">
+                            <p>Mi Area</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025. All rights reserved</p>
+        </div>
+
+        <script src="../js/chatbox.js"></script>
+    </footer>
+
+</body>
+
+</html>

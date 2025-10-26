@@ -1,0 +1,196 @@
+:root {
+    --mainColor: #FF000A;
+    --secondColor: #1E1E1E;
+    --thirdColor: #9E9E9E;
+    --fourthColor: #FFFFFF;
+    --fifthColor: #2E2E2E;
+    --transparent: #9e9e9e7a;
+    --fuentePrimario: 'MyCustomFont', "Oswald",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------ GENERAL SECTION SELECTORS ----------------------- */
+/* ------------------------------------------------------------------ */
+
+section {
+    /* Sections */
+    background-color: var(--secondColor);
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.content-section {
+    /* Main containers */
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* ------------------ FRSIT SECTION SELECTORS ----------------------- */
+/* ------------------------------------------------------------------ */
+
+.first-section{
+    margin-top: 4.5rem;
+}
+
+.first-column-section {
+    /* Column with the information */
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.second-column-section,
+.third-column-section {
+    /* Column with the image */
+    width: 30%;
+}
+
+.second-column-section img {
+    /* img of trainer */
+    width: 100%;
+}
+
+.third-column-section {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* width: 40%; */
+    margin: 0 auto;
+}
+
+.contenido-form {
+    background-color: var(--fifthColor);
+    padding: 2rem;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.contenido-form h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contenido-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-form input,
+.contenido-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #444;
+    color: var(--fourthColor);
+}
+
+.contenido-form input::placeholder
+.contenido-form textarea::placeholder{
+    color: var(--thirdColor);
+}
+
+.contenido-form label {
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    color: var(--fourthColor);
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------ SECOND SECTION SELECTORS ------------------------ */
+/* ------------------------------------------------------------------ */
+
+.left-column-section {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.left-column-section img{
+    width: 80%;
+}
+
+.right-column-section {
+    width: 50%;
+}
+
+.waw-indicators{
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.waw-indicators div{
+    width: fit-content;
+    padding: 8%;
+    background-color: var(--fifthColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.waw-indicators h2{
+    color: var(--mainColor);
+}
+
+/* ------------------------------------------------------------------ */
+/* ----------------------- FOURTH SECTION SELECTORS ----------------- */
+/* ------------------------------------------------------------------ */
+
+.fourth-section .content-section{
+    flex-direction: column;
+}
+
+.fourth-section .waw-indicators{
+    justify-content: space-evenly;
+}
+
+.fourth-section a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.fourth-section article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--fifthColor);
+    padding: 1rem 2rem;
+    border: 1px solid;
+    border-radius: 20px;
+    gap: 1rem;
+}
+
+.fourth-section .second-indicador{
+    border-color: var(--mainColor);
+}
+
+.fourth-section .cta1{
+    margin: 0;
+    margin-top: 1rem;
+    color: var(--fourthColor);
+}
+
+.fourth-section .cta1 h2{
+    margin: 0;
+    color: var(--fourthColor);
+}
+
+.fourth-section span{
+    font-size: small;
+    align-self: center;
+}
